@@ -7,7 +7,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -160,6 +160,8 @@
       <option name="presentableId" value="Default" />
       <updated>1601309118117</updated>
       <workItem from="1601309154047" duration="6608000" />
+      <workItem from="1602334509818" duration="12389000" />
+      <workItem from="1602702698320" duration="89000" />
     </task>
     <servers />
   </component>
@@ -175,6 +177,10 @@
       <screen x="72" y="27" width="1104" height="662" />
     </state>
     <state x="327" y="185" width="606" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1104.662@72.27.1104.662" timestamp="1602332290605" />
+    <state x="222" y="27" width="574" height="923" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602701633564">
+      <screen x="72" y="27" width="1848" height="923" />
+    </state>
+    <state x="222" y="27" width="574" height="923" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.27.1848.923@72.27.1848.923" timestamp="1602701633564" />
     <state width="638" height="146" key="GridCell.Tab.0.bottom" timestamp="1602332479784">
       <screen x="72" y="27" width="1104" height="662" />
     </state>
@@ -191,5 +197,13 @@
       <screen x="72" y="27" width="1104" height="662" />
     </state>
     <state width="638" height="146" key="GridCell.Tab.0.right/72.27.1104.662@72.27.1104.662" timestamp="1602332479769" />
+    <state x="614" y="208" width="753" height="568" key="NewPhpClassDialog" timestamp="1602701754197">
+      <screen x="72" y="27" width="1848" height="923" />
+    </state>
+    <state x="614" y="208" width="753" height="568" key="NewPhpClassDialog/72.27.1848.923@72.27.1848.923" timestamp="1602701754197" />
+    <state x="687" y="97" width="618" height="783" key="find.popup" timestamp="1602335192622">
+      <screen x="72" y="27" width="1848" height="923" />
+    </state>
+    <state x="687" y="97" width="618" height="783" key="find.popup/72.27.1848.923@72.27.1848.923" timestamp="1602335192622" />
   </component>
 </project>
