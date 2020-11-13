@@ -32,3 +32,14 @@ Route::put('/posts/{post}/update',[PostController::class, 'update'])->name('post
 
 Route::delete('/posts/{post}/delete', [PostController::class, 'delete'])->name('posts.delete');
 
+Route :: get ('/ home_user', 'User @ index');
+
+Route :: get ('/ login', 'User @ login');
+
+Route :: post ('/ loginPost', 'User @ loginPost');
+
+Route :: get ('/ register', 'User @ register');
+
+Route :: post ('/ registerPost', 'User @ registerPost');
+
+Route :: get ('/ logout', 'User @ logout');

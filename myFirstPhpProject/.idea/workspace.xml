@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c71642f-e25f-42b6-9d28-645bdaaea4d2" name="Default Changelist" comment="" />
+    <list default="true" id="9c71642f-e25f-42b6-9d28-645bdaaea4d2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/ModelUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_13_200835_create_model_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../midtermExam1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../midtermExam1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/595f7493-b11a-4c2f-8789-8fd218fc7be6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/595f7493-b11a-4c2f-8789-8fd218fc7be6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +49,9 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -132,17 +166,24 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1i99hv4oEzdyJCAq4II1eJt78mB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="sql.rename.search.for.storage.occurrences" value="true" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -162,11 +203,26 @@
       <workItem from="1601309154047" duration="6608000" />
       <workItem from="1602334509818" duration="12389000" />
       <workItem from="1602702698320" duration="89000" />
+      <workItem from="1605297941955" duration="2585000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="219" y="27" width="800" height="662" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602010317665">
@@ -201,6 +257,10 @@
       <screen x="72" y="27" width="1848" height="923" />
     </state>
     <state x="614" y="208" width="753" height="568" key="NewPhpClassDialog/72.27.1848.923@72.27.1848.923" timestamp="1602701754197" />
+    <state x="749" y="306" width="484" height="368" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1605298728901">
+      <screen x="72" y="27" width="1848" height="923" />
+    </state>
+    <state x="749" y="306" width="484" height="368" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/72.27.1848.923@72.27.1848.923" timestamp="1605298728901" />
     <state x="687" y="97" width="618" height="783" key="find.popup" timestamp="1602335192622">
       <screen x="72" y="27" width="1848" height="923" />
     </state>
