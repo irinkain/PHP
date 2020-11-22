@@ -14,31 +14,58 @@ class PostController
         return view ('getPublishedPosts')->with('posts',$posts);
     }
 
-
-    public function show(Post $post){
-        return view ('post')->with('post',$post);
-    }
-    public function create(){
-        return view('create');
+    public function create()
+    {
+        $tags = Tag::all();
+        return view('post/create_post', compact('tags'));
     }
 
-    public function save(Request $request){
-        $post = new Post($request.all());
-        $post.save();
-        return redirect()->back();
+    public function save(SavePostRequest $request)
+    {
+        $post = new Post($request->all());
+        $post->user_id = Auth::id();
+        $post->save();
+        $post->tags()->attach($request->tags);
+        return redirect()->action([PostController::class, 'index']);
     }
 
-    public function edit($id){
-        $post = Post::findOrFail($id);
-        return view('edit')->with('post',$post);
+    public function show(Post $post)
+    {
+        return view("post/post")->with("post", $post);
     }
 
-    public function update(Request $request,Post $post){
-        $post.$this->update($request->all());
-        return redirect()->back();
+    public function edit(Post $post)
+    {
+        $tags = Tag::all();
+        return view("post/edit", compact('post', 'tags'));
     }
-    public function delete(Post $post){
-        $post.$this->delete();
-        return redirect()->route('posts.show', $post);
+
+    public function update(Request $request, Post $post)
+    {
+        $post->update($request->all());
+        $post->user_id = Auth::id();
+        $post->tags()->detach($post->tags->pluck('id'));
+        $post->tags()->attach($request->tags);
+        return redirect()->route('posts.show', $post->id);
+    }
+
+    public function delete(Post $post)
+    {
+        $post->delete();
+        return redirect()->action([PostController::class, 'index']);
+    }
+
+    public function my_posts()
+    {
+        $id = Auth::id();
+        $user = User::find($id);
+        $posts = $user->posts;
+        return view('post/index', ['posts' => $posts]);
+    }
+
+    public function user_post(User $user)
+    {
+        $posts = $user->posts;
+        return view('post/index', ['posts' => $posts]);
     }
 }

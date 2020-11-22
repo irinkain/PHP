@@ -43,3 +43,31 @@ Route :: get ('/ register', 'User @ register');
 Route :: post ('/ registerPost', 'User @ registerPost');
 
 Route :: get ('/ logout', 'User @ logout');
+
+Route::get('/users/login', [LoginController::class, 'login'])->name('login');
+
+Route::post('/users/post-login', [LoginController::class, 'postLogin'])->name('post_login');
+
+Route::post('/users/logout', [LoginController::class, 'logout'])->name('logout');
+
+Route::get('/users/register', [LoginController::class, 'register'])->name('register');
+
+Route::post('/users/post-register', [LoginController::class, 'postRegister'])->name('post_register');
+
+Route::get('/users', [LoginController::class, 'index'])->name('users.all')->middleware('auth');
+
+Route::get('/tags', [TagController::class, 'index'])->name('tags.all');
+
+Route::get('/tags/create', [TagController::class, 'create'])->name('tags.create');
+
+Route::get('/tags/{tag}/edit', [TagController::class, 'edit'])->name('tags.edit');
+
+Route::put('/tags/{tag}/update', [TagController::class, 'update'])->name('tags.update');
+
+Route::post('/tags/save', [TagController::class, 'save'])->name('tags.save');
+
+Route::delete('/tags/{tag}/delete', [TagController::class, 'delete'])->name('tags.delete');
+
+
+
+
