@@ -68,6 +68,10 @@ Route::post('/tags/save', [TagController::class, 'save'])->name('tags.save');
 
 Route::delete('/tags/{tag}/delete', [TagController::class, 'delete'])->name('tags.delete');
 
+Route:get('Mail/create', [MailController::Class, 'create'])->name('Mail.create');
+
+Rouote::post('Mail/sendMail', [ailController::Class, 'sendMail'])->name('Mail.sendMail');
+
 
 
 

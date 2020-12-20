@@ -68,4 +68,9 @@ class PostController
         $posts = $user->posts;
         return view('post/index', ['posts' => $posts]);
     }
+    public function approve(Post $post){
+        $this->authorize('approve',$post);
+        $post->increment('views',1);
+        return redirect()->back();s
+    }
 }

@@ -20,28 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c71642f-e25f-42b6-9d28-645bdaaea4d2" name="Default Changelist" comment="Login/logout/register functionality">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TagController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/LoginRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/SavePostRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/SaveTagRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Tag.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_22_183442_create_tags_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_22_183836_create_post_tag_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/TagViews/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/TagViews/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/TagViews/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/User/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/595f7493-b11a-4c2f-8789-8fd218fc7be6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/595f7493-b11a-4c2f-8789-8fd218fc7be6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/MailController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Notifications/HireUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/PostFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/TagFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_20_113256_create_notifications_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/Mail/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../midterm2/quiz-app" beforeDir="false" afterPath="$PROJECT_DIR$/../quiz-app" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/CreatePost.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Post/CreatePost.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Post/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/getPublishedPosts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Post/getPublishedPosts.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/User/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Post/post.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/User/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Post/getPublishedPosts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/Post/getPublishedPosts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/User/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/User/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -223,6 +216,7 @@
       <workItem from="1605297941955" duration="3399000" />
       <workItem from="1606069407762" duration="323000" />
       <workItem from="1606069780811" duration="3821000" />
+      <workItem from="1608462448246" duration="3392000" />
     </task>
     <task id="LOCAL-00001" summary="Login/logout/register functionality">
       <created>1605300630336</created>

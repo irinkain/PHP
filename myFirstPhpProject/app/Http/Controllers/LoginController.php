@@ -40,4 +40,22 @@ class LoginController extends Controller
         $user->save();
         return $this->postLogin($request);
     }
+
+    public function is_hired(User $user){
+        if($user->is_hired ==1){
+            $user->is_hired=0;
+        }
+        else{
+            $user->is_hired=1;
+        }
+        $user->save();
+
+        $admin = User::where('is_admin',1)->get();
+        Mail::raw("Hire user!",function ($message) use ($user,$admin){
+            $message->to($admin->email)
+            ->subject("User N". $user->id. "  ". $user->name. "has already hired!");
+        });
+
+        response("ok",200);
+    }
 }

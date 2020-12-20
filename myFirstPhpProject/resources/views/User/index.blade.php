@@ -25,6 +25,18 @@
                                 </a>
                             </button>
                         </div>
+                        <div>
+                            @if($user->is_hired)
+                                <a type="submit" class="fa fa-check-square-o btn-approve"
+                                   url="{{route('is_hired', $user->id)}}"> hired</a>
+                            @else
+                                <a type="submit" class="fa fa-times btn-approve"
+                                   url="{{route('is_hired', $user->id)}}">hired</a>
+                            @endif
+                        </div>
+                        <div>
+                            <h5>{{$user->email}}</h5>
+                        </div>
                     </div>
                 </div>
             @endforeach

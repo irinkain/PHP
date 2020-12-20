@@ -77,6 +77,29 @@
                                 <p><i class="fa fa-heart"></i>{{$tag}}</p>
                         </div>
                 </div>
+                    <div class="d-flex justify-content-center">
+                        @can('approve', $post)
+                            <div class="ml-4 text-lg leading-7 font-semibold">
+                                <form method="post" enctype="multipart/form-data" action="{{route('approve', $post->id)}}">
+                                    @csrf
+                                    @method("PUT")
+                                    <button type="submit" class="fa fa-thumbs-up"></button>
+                                </form>
+                            </div>
+                        @endcan
+                        <div class="ml-4 text-lg leading-7 font-semibold">
+                            <a href="{{route('posts.edit', $post->id)}}">
+                                <i class="fa fa-pencil-square"></i>
+                            </a>
+                        </div>
+                        <div class="ml-4 text-lg leading-7 font-semibold">
+                            <form method="post" action="{{route('posts.delete', $post->id)}}">
+                                @csrf
+                                @method("DELETE")
+                                <button type="submit" class="fa fa-trash"></button>
+                            </form>
+                        </div>
+                    </div>
     </div>
         </div>
             @endforeach
